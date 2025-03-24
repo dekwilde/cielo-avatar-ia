@@ -33,7 +33,7 @@ public class SpaceKeyListener : MonoBehaviour
             Debug.Log("A tecla 'Space' foi solta.");
             videoCanvas.SetActive(true);
             videoPlayer.Play();
-            animator.SetTrigger("pensando");
+            animator.SetTrigger("02");
         }
 
         // Atualiza o estado anterior da tecla

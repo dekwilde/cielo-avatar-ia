@@ -15,9 +15,10 @@ public class ActionAnimController : MonoBehaviour
     public bool isSpeech = false;
     public bool isIdle = true;
     float currentAmplitude;
-    public SpeechBlend sb;
 
     public GameObject videoCanvas;
+
+    public TextureSwitcher mouthTexture;
 
     void Start() {
         IdleAnim();
@@ -36,6 +37,7 @@ public class ActionAnimController : MonoBehaviour
             string randomAnimName = talkingTriggers[randomAnimIndex];
             animator.SetTrigger(randomAnimName);
             isIdle = false;
+            mouthTexture.SetAnimationState(true);
             StartCoroutine(EndSpeech());
         }
     }
@@ -60,11 +62,13 @@ public class ActionAnimController : MonoBehaviour
         yield return new WaitForSeconds(4f);
         if (GetAudioAmplitude() > highAmplitudeThreshold && isSpeech == true)
         {
+            
             isSpeech = true;
             
             int randomAnimIndex = Random.Range(0, talkingTriggers.Length);
             string randomAnimName = talkingTriggers[randomAnimIndex];
             animator.SetTrigger(randomAnimName);
+            
             StartCoroutine(EndSpeech());
         } else {
             IdleAnim();
@@ -76,6 +80,7 @@ public class ActionAnimController : MonoBehaviour
 
     public void IdleAnim() {
         isIdle = true;
+        mouthTexture.SetAnimationState(false);
         int randomAnimIndex = Random.Range(0, idleTriggers.Length);
         string randomAnimName = idleTriggers[randomAnimIndex];
         animator.SetTrigger(randomAnimName);

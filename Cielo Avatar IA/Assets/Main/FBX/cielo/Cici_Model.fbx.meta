@@ -3,7 +3,22 @@ guid: 0f23559ad8bc9ab4ab9a63c4ee21e8c5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corpo_Cici_mat
+    second: {fileID: 2100000, guid: 308f27012a2ee8043942bec82cbc0089, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Face_Cici_mat
+    second: {fileID: 2100000, guid: 0cea37064fb0a2945a6a32cae803ab74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface2
+    second: {fileID: 2100000, guid: 2c3b62fae4713d948ad2a1d3f63b993c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
