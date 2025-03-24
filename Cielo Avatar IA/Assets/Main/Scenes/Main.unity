@@ -233,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 358869003723998166, guid: f6c3f18b0bb6ea846848adee83a796c5, type: 3}
       propertyPath: idleTriggers.Array.data[1]
-      value: 02
+      value: end
       objectReference: {fileID: 0}
     - target: {fileID: 358869003723998166, guid: f6c3f18b0bb6ea846848adee83a796c5, type: 3}
       propertyPath: talkingTriggers.Array.size
@@ -387,7 +387,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -501,9 +501,11 @@ MonoBehaviour:
   targetMaterial: {fileID: 2100000, guid: 1b49e1114019d81419469b9ed32a2abf, type: 2}
   idleTextures:
   - {fileID: 2800000, guid: 9f18a0b5a95e4b9479d10e5e1c5ab11e, type: 3}
+  - {fileID: 2800000, guid: 9f18a0b5a95e4b9479d10e5e1c5ab11e, type: 3}
   animTextures:
   - {fileID: 2800000, guid: 6789377cc7aecc647a274cca17c6b95c, type: 3}
   - {fileID: 2800000, guid: 42c6d60c6896bfc4db273add96ce5120, type: 3}
+  - {fileID: 2800000, guid: 7f3436f903bc8044197fb22e99688a9d, type: 3}
   frameRate: 0.2
 --- !u!1 &242994423
 GameObject:
