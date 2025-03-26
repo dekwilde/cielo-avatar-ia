@@ -38,11 +38,18 @@ public class TextureSwitcher : MonoBehaviour
         {
             List<Texture> currentTextures = isAnimating ? animTextures : idleTextures;
 
-            // Evita erro verificando se há texturas na lista
+            // Garante que há texturas antes de tentar acessar o índice
             if (currentTextures == null || currentTextures.Count == 0)
             {
+                index = 0; // Reseta o índice para evitar acessos inválidos
                 yield return null;
                 continue;
+            }
+
+            // Garante que o índice está dentro do limite válido
+            if (index >= currentTextures.Count)
+            {
+                index = 0;
             }
 
             targetMaterial.mainTexture = currentTextures[index];
@@ -51,4 +58,5 @@ public class TextureSwitcher : MonoBehaviour
             yield return new WaitForSeconds(frameRate);
         }
     }
+
 }
