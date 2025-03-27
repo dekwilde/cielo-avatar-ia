@@ -16,7 +16,6 @@ public class SpaceKeyListener : MonoBehaviour
 
     // Referência ao GameObject do video canvas
     public GameObject videoCanvas;
-    public VideoPlayer videoPlayer;
     public Animator animator;
 
     void Update()
@@ -32,7 +31,6 @@ public class SpaceKeyListener : MonoBehaviour
         {
             Debug.Log("A tecla 'Space' foi solta.");
             videoCanvas.SetActive(true);
-            videoPlayer.Play();
             animator.SetTrigger("02");
         }
 
