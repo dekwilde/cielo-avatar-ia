@@ -49,7 +49,7 @@ MonoBehaviour:
     m_Value: 0.98
   intensity:
     m_OverrideState: 1
-    m_Value: 0.336
+    m_Value: 0.354
   scatter:
     m_OverrideState: 1
     m_Value: 0.797
@@ -86,16 +86,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9008a067f4d626c4d8bc4bc48f04bb89, type: 3}
   m_Name: ScreenSpaceAmbientOcclusion
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 3
   rayTracing:
     m_OverrideState: 1
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 2.58
+    m_Value: 0.66
   directLightingStrength:
     m_OverrideState: 1
     m_Value: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
     m_Value: 0
   m_MaximumRadiusInPixels:
     m_OverrideState: 1
-    m_Value: 40
+    m_Value: 56
   m_BilateralUpsample:
     m_OverrideState: 1
     m_Value: 1
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d08ce26990eb1a4a9177b860541e702, type: 3}
   m_Name: Exposure
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   mode:
     m_OverrideState: 1
     m_Value: 0
@@ -271,7 +271,7 @@ MonoBehaviour:
     m_Value: 1
   fixedExposure:
     m_OverrideState: 1
-    m_Value: 8.240966
+    m_Value: 9.98769
   compensation:
     m_OverrideState: 1
     m_Value: 0
@@ -706,10 +706,10 @@ MonoBehaviour:
   active: 1
   temperature:
     m_OverrideState: 1
-    m_Value: -8
+    m_Value: 0
   tint:
     m_OverrideState: 1
-    m_Value: 5.2
+    m_Value: 0
 --- !u!114 &9125400101911613235
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -731,4 +731,4 @@ MonoBehaviour:
     m_Value: {r: 0, g: 0, b: 0, a: 1}
   balance:
     m_OverrideState: 1
-    m_Value: -50
+    m_Value: -25
