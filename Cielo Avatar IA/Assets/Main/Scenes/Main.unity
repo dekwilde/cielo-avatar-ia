@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 335.83984, g: 288.0126, b: 236.55168, a: 1}
+  m_IndirectSpecularColor: {r: 336.19476, g: 288.42377, b: 236.97449, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -352,6 +352,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6906065886924489673, guid: f6c3f18b0bb6ea846848adee83a796c5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 58827106}
+    - targetCorrespondingSourceObject: {fileID: 7024180865264278619, guid: f6c3f18b0bb6ea846848adee83a796c5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2104701156}
   m_SourcePrefab: {fileID: 100100000, guid: f6c3f18b0bb6ea846848adee83a796c5, type: 3}
 --- !u!1 &58827099 stripped
 GameObject:
@@ -371,7 +374,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoCanvas: {fileID: 55713581}
-  videoPlayer: {fileID: 0}
   animator: {fileID: 1468687029}
 --- !u!82 &58827102
 AudioSource:
@@ -1404,7 +1406,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4285755506
-  m_fontColor: {r: 0.44705886, g: 0.43921572, b: 0.45098042, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2354,7 +2356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetMaterial: {fileID: 2100000, guid: 1b49e1114019d81419469b9ed32a2abf, type: 2}
   idleTextures:
-  - {fileID: 2800000, guid: 8edbf64a5b7b2464fbcdc8321f823294, type: 3}
+  - {fileID: 2800000, guid: 7d45dcea16c7efa47be8454317503380, type: 3}
   animTextures:
   - {fileID: 2800000, guid: 3ef7450f5afb03049adb07a89f01f0a9, type: 3}
   - {fileID: 2800000, guid: 8fe18a5e606e7824ca20e58824431dd9, type: 3}
@@ -2629,37 +2631,6 @@ MonoBehaviour:
   - {fileID: 2800000, guid: b7c76a17d319e70418d337c26f4585c6, type: 3}
   animTextures: []
   frameRate: 0.2
---- !u!1 &1628388537
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1628388538}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1628388538
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1628388537}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.827899, y: 10, z: -1.5854731}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1629824277
 GameObject:
   m_ObjectHideFlags: 0
@@ -3014,6 +2985,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2104701155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7024180865264278619, guid: f6c3f18b0bb6ea846848adee83a796c5, type: 3}
+  m_PrefabInstance: {fileID: 58827098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2104701156
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104701155}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 262495df72d298046bf5c33f669fdfab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &962458988095071629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3312,15 +3309,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8624331102953362158, guid: 82b5425509a7b094a9546b8f77cc334e, type: 3}
       propertyPath: backgroundColorHDR.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8624331102953362158, guid: 82b5425509a7b094a9546b8f77cc334e, type: 3}
       propertyPath: backgroundColorHDR.g
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8624331102953362158, guid: 82b5425509a7b094a9546b8f77cc334e, type: 3}
       propertyPath: backgroundColorHDR.r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8624331102953362158, guid: 82b5425509a7b094a9546b8f77cc334e, type: 3}
       propertyPath: volumeLayerMask.m_Bits
@@ -3336,6 +3333,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8544273287448441867, guid: 82b5425509a7b094a9546b8f77cc334e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1787433088}
+    - targetCorrespondingSourceObject: {fileID: 8544273287448441867, guid: 82b5425509a7b094a9546b8f77cc334e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 962458988095071632}
   m_SourcePrefab: {fileID: 100100000, guid: 82b5425509a7b094a9546b8f77cc334e, type: 3}
 --- !u!20 &962458988095071630 stripped
 Camera:
@@ -3347,6 +3347,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8346409105789969332, guid: 82b5425509a7b094a9546b8f77cc334e, type: 3}
   m_PrefabInstance: {fileID: 962458988095071629}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &962458988095071632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787433084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ff331462306ec46b59d31b9a4ffe2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3354,7 +3366,6 @@ SceneRoots:
   - {fileID: 962458988095071629}
   - {fileID: 242994427}
   - {fileID: 1723017209}
-  - {fileID: 1628388538}
   - {fileID: 1078999240}
   - {fileID: 437752329}
   - {fileID: 58827098}
